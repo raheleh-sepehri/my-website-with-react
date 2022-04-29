@@ -1,0 +1,24 @@
+.floatingDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    height: 4.5rem;
+    padding: 0 20px;
+}
+.floatingDiv>img{
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+}
+.floatingDiv>span{
+    font-family: 'sans-serif';
+}

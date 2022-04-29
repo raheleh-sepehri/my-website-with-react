@@ -1,0 +1,123 @@
+.works{
+  padding: 0 3rem;  
+  display: flex;
+  height: 90vh;
+  margin-top: 2rem;
+}
+.w-rigt{
+    position: relative;
+}
+.main-circle{
+    position: absolute;
+    left: 9rem;
+    width: 18rem;
+    height: 18rem;
+    background: #fff;
+    box-shadow: var(--smboxShadow);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    top: 2rem;
+}
+.main-circle>*{
+    position: absolute;
+}
+.sec-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    box-sizing: border-box;
+   border: 5px solid #ebebeb;
+   box-shadow: var(--smboxShadow);
+}
+.main-circle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+
+}
+.main-circle>:nth-child(2){
+    top: 5rem;
+    left: -3rem;
+
+}
+.main-circle>:nth-child(3){
+    left: 6rem;
+    top: 5rem;
+ 
+}
+.main-circle>:nth-child(4){
+    top: 5rem;
+    left: 15rem;
+ 
+}
+.main-circle>:nth-child(5){
+    left: 6rem;
+    top: 15rem;
+
+}
+.sec-circle>img{
+  width: 80%;
+}
+.w-backcircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: -1;
+}
+.blue-circle{
+    background-color: #1949b8;
+    top: 0;
+    left: 18rem;
+}
+.yellow-circle{
+    background: #f5c32c;
+    left: 18rem;
+    top: 8rem;
+}
+@media screen and (max-width:480px) {
+    .works{
+        flex-direction: column;
+        padding: 0;
+        margin-top: 0;
+        height: 55rem;
+        gap: 8rem;
+    }
+    .w-rigt{
+      display: flex;
+      align-items:flex-start ;
+      justify-content: start;
+      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      -o-transform: scale(0.6);
+     }
+     .main-circle{
+        left: -2rem;
+     }
+     .blue-circle {
+
+        left: 7rem;
+    }
+    .yellow-circle {
+        left: 7rem;
+       
+    }
+    .s-left {
+        gap: 0rem;
+   
+    }
+}

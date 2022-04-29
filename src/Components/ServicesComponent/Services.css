@@ -1,0 +1,81 @@
+.servise{
+    width: 100%;
+    margin-top: 3rem;
+    height: 90vh;
+    display: flex;
+ 
+}
+
+.s-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    position: relative;
+}
+.s-title{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.s-title>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.s-title>:nth-child(2){
+    color: var(--black);
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.s-title>:last-child{
+    font-size: 16px;
+    color: var(--gray);
+}
+.s-button{
+    width: 8rem;
+    margin-top: 3rem;
+}
+.s-right{
+    flex: 1;
+    position: relative;
+}
+@media screen and (max-width:480px) {
+    .servise{
+        margin-top: 3rem;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .s-left{
+        width: 100%;
+    }
+    .s-title>:nth-child(1) {
+       
+        font-size: 2.5rem;
+    }
+    .s-title>:nth-child(2) {
+       
+        font-size: 2.5rem;
+    }
+    .s-title>:last-child {
+        line-height: 30px;
+        width: 100%;
+    }
+  
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .s-right>*{
+        position: static !important;
+        width: auto;
+    }
+    .s-right .blur{
+        display: none;
+    }
+}
